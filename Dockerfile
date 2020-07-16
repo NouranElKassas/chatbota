@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt install python3-dev 
 RUN apt install python3-pip	
 
-RUN pip install -U pip
+
 RUN pip install rasa
 RUN pip install ujson
-RUN pip install -U pip
+
