@@ -1,0 +1,1 @@
+conda activate vvv  ( the name is vvv)

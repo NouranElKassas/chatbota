@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+  rasa:
+    image: rasa/rasa:1.10.2-full
+    ports:
+      - 5005:5005
+    volumes:
+      - ./:/app
+    command:
+      - run
+      - -m
+      - models
+      - --enable-api
+      - --cors
+      - "*"
+      - --debug

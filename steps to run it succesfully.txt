@@ -1,0 +1,21 @@
+1) activate venv to use: conda activate vvv
+2) to put the server online : 
+	-open anaconda and enter to the path:cd C:\Users\Yassine\Desktop\CHAIstartup\chatbot integration website ( it work!!!!!!!!!!!!!!!)\serverfolder
+	- run : ngrok http 5005
+	- from the line : Forwarding   https://09993775.ngrok.io -> http://localhost:5005   
+	  copy https://09993775.ngrok.io and put it in the value of socketUrl of the file index.html
+
+3)open another anaconda : 
+	- go to first bot folder: cd C:\Users\Yassine\Desktop\CHAIstartup\chatbot integration website ( it work!!!!!!!!!!!!!!!)\firstbot
+	-and run: rasa run -m models --enable-api --cors "*" --debug
+	note: you have to see the capture.png in the folder
+4) go to index.html, actualiser the page and you will se that works :)
+
+
+
+note: this chatbot widgate is based on :
+					https://github.com/botfront/rasa-webchat
+	and this video: 		https://www.youtube.com/watch?v=J1n3Y8SVxVM&t=159s
+
+note: we can integrate the bot without the step 2, all we have to do is : 
+		 			put "http://localhost:5005" in the value of socketUrl of the file index.html
