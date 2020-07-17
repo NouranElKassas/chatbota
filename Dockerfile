@@ -6,6 +6,6 @@ COPY app /app
 COPY server.sh /app/server.sh
 
 RUN cd app
-RUN rasa train nlu
+#RUN rasa train nlu
 
 ENTRYPOINT ["/app/server.sh"]
