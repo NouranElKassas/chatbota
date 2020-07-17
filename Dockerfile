@@ -4,8 +4,7 @@ ENV LANG C.UTF-8
 
 #RUN sudo su
 RUN apt-get update
-RUN apt install python3-dev 
-RUN apt install python3-pip	
+RUN apt install -y python3-dev python3-pip
 
 
 RUN pip install rasa
