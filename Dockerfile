@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM rasa/rasa:1.9.3
 
 RUN apt-get update && apt-get install -y python3 python3-pip && python3 -m pip install --no-cache --upgrade pip && pip3 install --no-cache rasa==1.2.4 && pip3 install ujson && pip3 install --no-cache python-engineio==3.8.1
 
